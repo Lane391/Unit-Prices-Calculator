@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-   
-    
 <string name="NetValueLabel">净量：</string>
     <string name="TotalPricesLabel">总价：</string>
     <string name="UnitPriceCalculator">单价计算器</string>
     <string name="TotalPricesHint">请输入总价</string>
     <string name="NetHint">请输入净量</string>
     <string name="CalUPButton">计算单价</string>
-<string name="app_name">Unit Prices Calculator</string>
+<string name="app_name">单价计算器</string>
+<string name="ResultTitle">单价计算结果</string>
+<string name="menu_aboutit">关于这个计算器</string>
+    <string name="menu_exit">退出</string>
+    <string name="no_record">没有历史</string>
 </resources>
