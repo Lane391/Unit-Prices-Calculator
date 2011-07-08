@@ -4,18 +4,19 @@
 	android:layout_height="wrap_content" android:baselineAligned="true">
 	<TextView android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:text="@string/UnitPriceCalculator"
-		android:textSize="35sp" android:layout_marginBottom="30dp" />
+		android:textSize="35sp" android:layout_marginBottom="20dp" />
 	<!-- 计算区域 -->
 	<RelativeLayout android:id="@+id/relativeLayout1"
 		android:layout_height="match_parent" android:layout_width="wrap_content">
 		<!-- 总价标签 -->
 		<TextView android:text="@string/TotalPricesLabel" android:id="@+id/TotalPricesLabel"
-			 android:layout_width="wrap_content" 
-			android:layout_height="50dp" android:textSize="25sp"></TextView>
+			android:layout_width="wrap_content" android:layout_height="50dp"
+			android:textSize="25sp"></TextView>
 		<!-- 总价输入框 -->
-		<EditText android:id="@+id/TotalPricesValue" android:layout_height="50dp"
-			android:layout_toRightOf="@id/TotalPricesLabel" android:numeric="decimal"
-			android:layout_width="120dp" android:hint="@string/TotalPricesHint" android:layout_alignTop="@id/TotalPricesLabel"
+		<EditText android:id="@+id/TotalPricesValue"
+			android:layout_height="50dp" android:layout_toRightOf="@id/TotalPricesLabel"
+			android:numeric="decimal" android:layout_width="120dp"
+			android:hint="@string/TotalPricesHint" android:layout_alignTop="@id/TotalPricesLabel"
 			android:textSize="12sp"></EditText>
 		<!-- 净量标签 -->
 		<TextView android:text="@string/NetValueLabel" android:id="@+id/NetValueLabel"
@@ -24,14 +25,18 @@
 		<!-- 净量输入框 -->
 		<EditText android:hint="@string/NetHint" android:id="@+id/NetValue"
 			android:layout_below="@id/TotalPricesValue" android:layout_toRightOf="@id/NetValueLabel"
-			android:numeric="decimal" android:layout_height="50dp" android:textSize="12sp"
-			android:layout_width="120dp"></EditText>
+			android:numeric="decimal" android:layout_height="50dp"
+			android:textSize="12sp" android:layout_width="120dp"></EditText>
 		<!-- 计算按钮 -->
 		<Button android:layout_height="100dp" android:textSize="15sp"
 			android:id="@+id/calcutlatorUP" android:layout_width="wrap_content"
 			android:layout_alignParentRight="true" android:text="@string/CalUPButton"></Button>
 	</RelativeLayout>
-	<TextView android:id="@+id/singleResult" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-
-
+	<!-- 现实历史结果 -->
+	<ListView 
+		android:id="@+id/history_list"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:text="@string/no_record"
+	/>
 </LinearLayout>
